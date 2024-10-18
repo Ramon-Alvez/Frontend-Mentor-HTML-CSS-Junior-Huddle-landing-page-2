@@ -1,0 +1,12 @@
+:root {
+    /* ### Primary */
+
+    --DarkButton: hsl(322, 100%, 66%);
+    --LightButton: hsl(321, 100%, 78%);
+    --Confirmation: hsl(0, 100%, 63%);
+
+    /* ### Neutral */
+
+    --NeutralDark: hsl(192, 100%, 9%);
+    --NeutralLight: hsl(207, 100%, 98%);
+}
