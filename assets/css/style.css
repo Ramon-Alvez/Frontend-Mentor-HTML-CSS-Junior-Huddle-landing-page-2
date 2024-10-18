@@ -17,7 +17,8 @@ h1, h2 {
 }
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem; /* Temporary */
+    font-size: 2rem; /* Temporary */
+    color: var(--NeutralDark);
 }
 
 /* ~~ Header ~~ Stylization  */
@@ -36,4 +37,112 @@ body {
     border: 0.1rem solid var(--DarkButton);
     border-radius: 2rem;
     box-shadow: 0 0 1.4rem -0.4rem var(--DarkButton);
+}
+
+
+/* ~~ Main content ~~ Stylization */
+    /* GRID CONFIG */
+    #hero {
+        grid-area: hero;
+    }
+    #grow-together {
+        grid-area: grow-together;
+    }
+    #flowing-conversations {
+        grid-area: flowing-conversations;
+    }
+    #your-users {
+        grid-area: your-users;
+    }
+    #build {
+        grid-area: build;
+    }
+main {
+    display: grid;
+    grid-template-areas: 
+        "hero hero"
+        "grow-together grow-together"
+        "flowing-conversations flowing-conversations"
+        "your-users your-users"
+        "build build"
+    ;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* BUTTON */
+.get-started-button {
+    background-color: var(--DarkButton);
+    color: #fff;
+    font-weight: 700;
+    padding: 2.5rem;
+    width: 30rem;
+    border-radius: 4rem;
+    box-shadow: 0 1rem 2rem -1.2rem var(--NeutralDark);
+}
+
+
+/* ~~ HERO ~~ Stylization */
+    /* GRID CONFIG */
+    .section-content {
+        grid-area: section-content;
+    }
+    .mockup {
+        grid-area: mockup;
+    }
+    .communities-section {
+        grid-area: communities-section;
+    }
+    .messages-section {
+        grid-area: messages-section;
+    }
+#hero {
+    padding: 0 calc(var(--DefaultMargin) * 2);
+    display: grid;
+    grid-template-areas: 
+        "section-content section-content"
+        "mockup mockup"
+        "communities-section messages-section"
+    ;
+    grid-template-columns: repeat(2, 1fr);
+}
+#hero .section-content {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    
+    text-align: center;
+}
+#hero .section-content h1 {
+    font-size: 4.8rem;
+}
+#hero .section-content p {
+    max-width: 60rem;
+}
+
+#hero .mockup {
+    margin: 0 auto;
+}
+#hero .mockup img {
+    width: 100%;
+}
+
+#hero .communities-section, 
+#hero .messages-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#hero .communities-section span, 
+#hero .messages-section span {
+    font-size: 8rem;
+    font-weight: 700;
+}
+#hero .communities-section p, 
+#hero .messages-section p {
+    opacity: 0.6;
 }
