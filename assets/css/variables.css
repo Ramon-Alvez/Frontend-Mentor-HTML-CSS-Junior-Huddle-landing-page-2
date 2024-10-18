@@ -9,4 +9,6 @@
 
     --NeutralDark: hsl(192, 100%, 9%);
     --NeutralLight: hsl(207, 100%, 98%);
+
+    --DefaultMargin: 5%;
 }

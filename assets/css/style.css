@@ -19,3 +19,21 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem; /* Temporary */
 }
+
+/* ~~ Header ~~ Stylization  */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--DefaultMargin);
+    height: 20vh;
+}
+
+#header .header-button {
+    background-color: #fff;
+    color: var(--DarkButton);
+    padding: 0.7rem 3rem;
+    border: 0.1rem solid var(--DarkButton);
+    border-radius: 2rem;
+    box-shadow: 0 0 1.4rem -0.4rem var(--DarkButton);
+}
