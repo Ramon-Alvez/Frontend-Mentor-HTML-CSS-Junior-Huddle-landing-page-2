@@ -210,3 +210,15 @@ main {
     gap: 3rem;
     max-width: 52rem;
 }
+
+
+/* ~~ Build ~~ Stylization */
+#build {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5rem;
+    height: 50vh;
+}
