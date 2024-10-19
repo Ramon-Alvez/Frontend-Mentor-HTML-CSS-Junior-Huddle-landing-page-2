@@ -1,0 +1,53 @@
+@media screen and (max-width: 950px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    #hero {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    #about #grow-together .container, 
+    #about #your-users .container,
+    #about #flowing-conversations .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 10rem;
+    }
+    #footer .container {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: left;
+    }
+}
+@media screen and (max-width: 500px) {
+    .get-started-button {
+        width: 100%;
+    }
+    #header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #hero {
+        padding: 0 var(--DefaultMargin);
+    }
+    #about .container {
+        padding: 3rem var(--DefaultMargin);
+    } 
+    #footer .container .newsletter form {
+        flex-direction: column;
+    }
+    #footer .container .newsletter form #email,
+    #footer .container .newsletter form #submit {
+        min-width: auto;
+        width: 100%;
+    }
+}

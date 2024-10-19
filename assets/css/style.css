@@ -92,10 +92,10 @@ main {
 
 
 /* ~~ HERO ~~ Stylization */
-/* GRID CONFIG */
-.section-content {
-    grid-area: section-content;
-}
+    /* GRID CONFIG */
+    .section-content {
+        grid-area: section-content;
+    }
     .mockup {
         grid-area: mockup;
     }
@@ -277,7 +277,7 @@ main {
     margin-bottom: 1.5rem;
 }
 #footer .container #address-info p {
-    width: 35rem;
+    max-width: 35rem;
     display: flex;
     align-items: center;
 }
@@ -327,10 +327,13 @@ main {
     font-size: 2.8rem;
 }
 #footer .container .newsletter p {
-    width: 38rem;
+    max-width: 38rem;
 }
+
+/* FOOTER - FORM STYLE */
 #footer .container .newsletter form {
     display: flex;
+    flex-wrap: wrap;
     gap: 4rem;
     margin-top: 1.5rem;
 }
@@ -342,7 +345,7 @@ main {
 }
 #footer .container .newsletter form #email {
     padding: 1.5rem;
-    width: 35rem;
+    min-width: 35rem;
     height: 4.5rem;
     border: none;
     border-radius: 0.5rem;
@@ -378,7 +381,7 @@ main {
     padding: 2rem 0;
 }
 #footer #coded-by .attribution {
-    font-size: 11px;
+    font-size: 1.2rem;
     text-align: center;
 }
 #footer #coded-by .attribution a {
