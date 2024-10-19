@@ -233,6 +233,7 @@ main {
     text-align: center;
     gap: 5rem;
     height: 50vh;
+    padding: 0 var(--DefaultMargin);
 }
 
 
