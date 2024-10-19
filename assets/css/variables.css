@@ -1,9 +1,10 @@
 :root {
-    /* ### Primary */
+    /* ### Button */
 
-    --DarkButton: hsl(322, 100%, 66%);
-    --LightButton: hsl(321, 100%, 78%);
+    --Button: hsl(322, 100%, 66%);
+    --Hover: hsl(321, 100%, 78%);
     --Confirmation: hsl(0, 100%, 63%);
+    --MediaHover: hsl(180, 100%, 44%);
 
     /* ### Neutral */
 

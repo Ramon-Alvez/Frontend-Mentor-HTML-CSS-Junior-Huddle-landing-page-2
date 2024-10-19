@@ -32,14 +32,22 @@ body {
     padding: 0 var(--DefaultMargin);
     height: 20vh;
 }
-
+#header .logo:hover {
+    transform: scale(1.01);
+    transition: 0.2s ease;
+}
 #header .header-button {
     background-color: #fff;
-    color: var(--DarkButton);
+    color: var(--Button);
     padding: 0.7rem 3rem;
-    border: 0.1rem solid var(--DarkButton);
+    border: 0.1rem solid var(--Button);
     border-radius: 2rem;
-    box-shadow: 0 0 1.4rem -0.4rem var(--DarkButton);
+    box-shadow: 0 0 1.4rem -0.4rem var(--Button);
+    transition: 0.2s ease;
+}
+#header .header-button:hover {
+    color: var(--Hover);
+    border: 0.1rem solid var(--Hover);
 }
 
 
@@ -69,13 +77,17 @@ main {
 
 /* BUTTON */
 .get-started-button {
-    background-color: var(--DarkButton);
+    background-color: var(--Button);
     color: #fff;
     font-weight: 700;
     padding: 2.5rem;
     width: 30rem;
     border-radius: 4rem;
     box-shadow: 0 1rem 2rem -1.2rem var(--NeutralDark);
+    transition: 0.2s ease;
+}
+.get-started-button:hover {
+    background-color: var(--Hover);
 }
 
 
@@ -297,6 +309,10 @@ main {
 #footer .container #address-info .media a{
     color: #fff;
     font-size: 3.5rem;
+    transition: 0.2s ease;
+}
+#footer .container #address-info .media a:hover {
+    color: var(--MediaHover);
 }
 
 
@@ -327,10 +343,16 @@ main {
 #footer .container .newsletter form #submit {
     padding: 1rem 4rem;
     font-weight: 700;
-    background-color: var(--DarkButton);
+    background-color: var(--Button);
     color: #fff;
     border: none;
     border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+#footer .container .newsletter form #submit:hover {
+    background-color: var(--Hover);
+    color: #fff;
 }
 
 
