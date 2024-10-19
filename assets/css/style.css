@@ -334,14 +334,31 @@ main {
     gap: 4rem;
     margin-top: 1.5rem;
 }
+#footer .container .newsletter .confirmation {
+    display: none;
+    color: var(--Confirmation);
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
 #footer .container .newsletter form #email {
     padding: 1.5rem;
     width: 35rem;
+    height: 4.5rem;
     border: none;
     border-radius: 0.5rem;
 }
+#footer .container .newsletter form #email:invalid {
+    border: 0.1rem solid var(--Confirmation);
+}
+#footer .container .newsletter form #email:invalid + .confirmation {
+    display: block;
+}
+#footer .container .newsletter form #email:valid + .confirmation {
+    display: none;
+}
 #footer .container .newsletter form #submit {
     padding: 1rem 4rem;
+    height: 4.5rem;
     font-weight: 700;
     background-color: var(--Button);
     color: #fff;
