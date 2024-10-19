@@ -11,6 +11,9 @@
         text-align: center;
         align-items: center;
     }
+    #hero .mockup {
+        margin-top: 10rem;
+    }
     #about #grow-together .container, 
     #about #your-users .container,
     #about #flowing-conversations .container {
