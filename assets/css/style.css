@@ -222,3 +222,126 @@ main {
     gap: 5rem;
     height: 50vh;
 }
+
+
+/* ~~ Footer ~~ Stylization */
+
+#footer {
+    background-color: var(--NeutralDark);
+    color: #fff;
+}
+#footer .footer-pattern img {
+    background-color: #fff;
+    width: 100%;
+}
+/* ~~ Footer Container ~~ Stylization */
+    /* GRID CONFIG */
+    #address-info {
+        grid-area: address-info;
+    }
+    .newsletter {
+        grid-area: newsletter;
+    }
+#footer .container {
+    display: grid;
+    grid-template-areas: 
+        "address-info newsletter"
+    ;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 10rem calc(var(--DefaultMargin) * 2);
+}
+
+
+/* Footer Adress info - stylization */
+#footer .container #address-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+#footer .container #address-info img {
+    width: 26rem;
+    margin-bottom: 1.5rem;
+}
+#footer .container #address-info p {
+    width: 35rem;
+    display: flex;
+    align-items: center;
+}
+#footer .container #address-info .phone::before {
+    content: '';
+    display: inline-block;
+    background: url(../images/icon-phone.svg) no-repeat center center;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 3rem;
+}
+#footer .container #address-info .email::before {
+    content: '';
+    display: inline-block;
+    background: url(../images/icon-email.svg) no-repeat center center;
+    width: 2rem;
+    height: 1.6rem;
+    margin-right: calc(3rem - 0.2rem);
+}
+
+
+/* Footer Media - stylization */
+#footer .container #address-info .media {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+#footer .container #address-info .media a{
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+
+/* Footer Newsletter - stylization */
+#footer .container .newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#footer .container .newsletter h2 {
+    text-transform: uppercase;
+    font-size: 2.8rem;
+}
+#footer .container .newsletter p {
+    width: 38rem;
+}
+#footer .container .newsletter form {
+    display: flex;
+    gap: 4rem;
+    margin-top: 1.5rem;
+}
+#footer .container .newsletter form #email {
+    padding: 1.5rem;
+    width: 35rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+#footer .container .newsletter form #submit {
+    padding: 1rem 4rem;
+    font-weight: 700;
+    background-color: var(--DarkButton);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+
+/* Footer - Coded-by section stylization */
+#footer #coded-by {
+    padding: 2rem 0;
+}
+#footer #coded-by .attribution {
+    font-size: 11px;
+    text-align: center;
+}
+#footer #coded-by .attribution a {
+    color: beige;
+}
