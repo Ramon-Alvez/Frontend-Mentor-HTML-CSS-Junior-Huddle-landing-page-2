@@ -11,4 +11,8 @@
     --NeutralLight: hsl(207, 100%, 98%);
 
     --DefaultMargin: 5%;
+
+    --HeroFontSize: 2rem;
+    --DefaultFontSize: 1.6rem;
+    --TitlesSize: 4rem;
 }
